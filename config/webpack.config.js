@@ -414,6 +414,7 @@ module.exports = function(webpackEnv) {
                   : isEnvDevelopment,
                 modules: true,
                 getLocalIdent: getCSSModuleLocalIdent,
+                localIdentName: '[name]__[local]__[hash:base64:5]'
               }),
             },
             // Opt-in support for SASS (using .scss or .sass extensions).
