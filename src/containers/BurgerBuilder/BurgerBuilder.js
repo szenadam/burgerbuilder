@@ -27,14 +27,13 @@ class BurgerBuilder extends Component {
   };
 
   componentDidMount() {
-    console.log(this.props);
     axios
       .get('https://udemy-burgerbuilder-d623e.firebaseio.com/ingredients.json')
       .then(resp => {
         this.setState({ ingredients: resp.data });
       })
       .catch(error => {
-        this.setState({error: true});
+        this.setState({ error: true });
       });
   }
 
@@ -112,7 +111,22 @@ class BurgerBuilder extends Component {
     //   .catch(error => {
     //     this.setState({ loading: false, purchasing: false });
     //   });
-    this.props.history.push('/checkout');
+
+    const queryParams = [];
+    for (let i in this.state.ingredients) {
+      queryParams.push(
+        encodeURIComponent(i) +
+          '=' +
+          encodeURIComponent(this.state.ingredients[i])
+      );
+    }
+
+    const queryString = queryParams.join('&');
+
+    this.props.history.push({
+      pathName: '/checkout',
+      search: '?' + queryString
+    });
   };
 
   render() {
@@ -125,7 +139,11 @@ class BurgerBuilder extends Component {
     }
 
     let orderSummary = null;
-    let burger = this.state.error ? <p>Ingredients cant be loaded!</p> : <Spinner />;
+    let burger = this.state.error ? (
+      <p>Ingredients cant be loaded!</p>
+    ) : (
+      <Spinner />
+    );
 
     if (this.state.ingredients) {
       burger = (
