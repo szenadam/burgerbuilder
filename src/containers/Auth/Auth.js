@@ -95,7 +95,6 @@ class Auth extends Component {
   };
 
   submitHandler = event => {
-    console.log('foo');
     event.preventDefault();
     this.props.onAuth(
       this.state.controls.email.value,
