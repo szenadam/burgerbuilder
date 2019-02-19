@@ -29,7 +29,7 @@ export const purchaseBurger = orderData => {
       .post('/orders.json', orderData)
       .then(resp => {
         console.log(resp.data);
-        dispatch(purchaseBurgerSuccess(resp.data, orderData));
+        dispatch(purchaseBurgerSuccess(resp.data.name, orderData));
       })
       .catch(error => {
         dispatch(purchaseBurgerFail(error));
