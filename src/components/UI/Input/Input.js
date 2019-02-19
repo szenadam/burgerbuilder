@@ -1,4 +1,5 @@
 import React from 'react';
+
 import classes from './Input.css';
 
 const input = props => {
@@ -13,34 +14,53 @@ const input = props => {
   switch (props.elementType) {
     case 'input':
       inputElement = (
-        <input onChange={props.changed} className={inputClasses.join(' ')} {...props.elementConfig} value={props.value} />
+        <input
+          className={inputClasses.join(' ')}
+          {...props.elementConfig}
+          value={props.value}
+          onChange={props.changed}
+        />
       );
       break;
     case 'textarea':
       inputElement = (
-        <textarea onChange={props.changed} className={inputClasses.join(' ')} {...props.elementConfig} value={props.value} />
+        <textarea
+          className={inputClasses.join(' ')}
+          {...props.elementConfig}
+          value={props.value}
+          onChange={props.changed}
+        />
       );
       break;
     case 'select':
       inputElement = (
-        <select onChange={props.changed} className={inputClasses.join(' ')} value={props.value}>
+        <select
+          className={inputClasses.join(' ')}
+          value={props.value}
+          onChange={props.changed}
+        >
           {props.elementConfig.options.map(option => (
-            <option key={option.value} value={option.value}>{option.displayValue}</option>
+            <option key={option.value} value={option.value}>
+              {option.displayValue}
+            </option>
           ))}
         </select>
       );
       break;
     default:
       inputElement = (
-        <input onChange={props.changed} className={inputClasses.join(' ')} {...props.elementConfig} value={props.value} />
+        <input
+          className={inputClasses.join(' ')}
+          {...props.elementConfig}
+          value={props.value}
+          onChange={props.changed}
+        />
       );
   }
 
   return (
     <div className={classes.Input}>
-      <label className={classes.Label} htmlFor="">
-        {props.label}
-      </label>
+      <label className={classes.Label} htmlFor="">{props.label}</label>
       {inputElement}
     </div>
   );
