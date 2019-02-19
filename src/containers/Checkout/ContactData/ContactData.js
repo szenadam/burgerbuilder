@@ -83,7 +83,7 @@ class ContactData extends Component {
             { value: 'cheapest', displayValue: 'Cheapest' }
           ]
         },
-        value: '',
+        value: '', // TODO add default value 'fastest' or it will send empty string if not changed
         validation: {},
         valid: true
       }
