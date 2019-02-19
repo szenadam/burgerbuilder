@@ -11,11 +11,11 @@ const purchaseInit = (state, action) => {
   return updateObject(state, { purchased: false });
 };
 const purchaseBurgerStart = (state, action) => {
-  return updateObject(state, { loading: true });
+  return updateObject(state, { loading: false });
 };
 const purchaseBurgerSuccess = (state, action) => {
   const newOrder = updateObject(action.orderData, { id: action.orderId });
-  return updateObject(state, { loading: false, orders: state.orders.concat(newOrder) });
+  return updateObject(state, { loading: false, purchased: true, orders: state.orders.concat(newOrder) });
 };
 const purchaseBurgerFail = (state, action) => {
   return updateObject(state, { loading: false });
