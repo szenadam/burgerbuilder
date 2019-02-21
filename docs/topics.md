@@ -45,3 +45,7 @@ Topics learned:
   - Testing containers
   - Testing redux
 - Deploying app to firebase with the Firebase CLI
+- Intro to animations in React
+  - Transition
+  - CSSTransition
+  - TransitionGroup
