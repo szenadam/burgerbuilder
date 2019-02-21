@@ -44,3 +44,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
   - "Authenticate" as a menu item sound really strange, need fixing
 - Add prop types where necessary
 - Users should be able to delete orders
+- Needs more tests, maybe add test coverage report also
+- Travis CI setup
