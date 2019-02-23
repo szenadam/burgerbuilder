@@ -46,3 +46,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 - Users should be able to delete orders
 - Needs more tests, maybe add test coverage report also
 - Travis CI setup
+- i18n using 'context' in react
+- Multi-theme UI using 'context' in react
