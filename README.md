@@ -1,5 +1,6 @@
 Udemy -- React - The Complete Guide Course Project
 ==================================================
+[![Build Status](https://travis-ci.com/szenadam/burgerbuilder.svg?branch=master)](https://travis-ci.com/szenadam/burgerbuilder)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
@@ -40,6 +41,5 @@ You don’t have to ever use `eject`. The curated feature set is suitable for sm
 - Add prop types where necessary
 - Users should be able to delete orders
 - Needs more tests, maybe add test coverage report also
-- Travis CI setup
 - i18n using 'context' in react
 - Multi-theme UI using 'context' in react

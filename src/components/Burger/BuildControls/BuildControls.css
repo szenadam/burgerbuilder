@@ -59,17 +59,3 @@
   -ms-user-select: none; /* Internet Explorer/Edge */
   user-select: none; /* Non-prefixed version, currently supported by Chrome and Opera */
 }
-
-@media (min-height: 500px) and (min-height: 400px) {
-  .BuildControls {
-    width: 350px;
-    height: 300px
-  }
-}
-
-@media (min-height: 500px) and (min-height: 401px) {
-  .BuildControls {
-    width: 450px;
-    height: 400px
-  }
-}
