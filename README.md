@@ -37,11 +37,6 @@ Instead, it will copy all the configuration files and the transitive dependencie
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
 
 ### TODO
-- UI/UX improvements:
-  - Show sign in first or maybe sign in in a different component
-  - Fix scroll bar on burger builder on windows chrome
-  - Create proper burger favicon
-  - "Authenticate" as a menu item sound really strange, need fixing
 - Add prop types where necessary
 - Users should be able to delete orders
 - Needs more tests, maybe add test coverage report also
