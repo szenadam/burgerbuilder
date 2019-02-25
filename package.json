@@ -116,10 +116,6 @@
       "web.jsx",
       "jsx",
       "node"
-    ],
-    "watchPlugins": [
-      "C:\\Users\\adam\\Documents\\dev\\burgerbuilder\\node_modules\\jest-watch-typeahead\\filename.js",
-      "C:\\Users\\adam\\Documents\\dev\\burgerbuilder\\node_modules\\jest-watch-typeahead\\testname.js"
     ]
   },
   "babel": {
