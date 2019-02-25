@@ -8,6 +8,10 @@
   box-sizing: border-box;
 }
 
+.Auth h1 {
+  color: #7f3608;
+}
+
 
 @media (min-width: 600px) {
   .Auth {

@@ -105,6 +105,7 @@ const auth = props => {
 
   return (
     <div className={classes.Auth}>
+      <h1>{isSignup ? 'LOGIN' : 'SIGNUP'}</h1>
       {authRedirect}
       {errorMessage}
       <form onSubmit={submitHandler}>
@@ -112,7 +113,7 @@ const auth = props => {
         <Button btnType="Success">SUBMIT</Button>
       </form>
       <Button clicked={switchAuthModeHandler} btnType="Danger">
-        SWITCHI TO {isSignup ? 'SIGNING' : 'SIGNUP'}
+        SWITCHI TO {!isSignup ? 'SIGNING' : 'SIGNUP'}
       </Button>
     </div>
   );
