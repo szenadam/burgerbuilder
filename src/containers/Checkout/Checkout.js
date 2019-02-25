@@ -1,6 +1,7 @@
 import React from 'react';
 import { Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
+import { animateScroll as scroll } from "react-scroll";
 
 import CheckoutSummary from '../../components/Order/CheckoutSummary/CheckoutSummary';
 import ContactData from './ContactData/ContactData';
@@ -10,9 +11,15 @@ const checkout = props => {
     props.history.goBack();
   };
 
+  const scrollToBottom = () => {
+    scroll.scrollToBottom();
+  };
+
   const checkoutContinuedHandler = () => {
     props.history.replace('/checkout/contact-data');
+    scrollToBottom();
   };
+
 
   let summary = <Redirect to="/" />;
   if (props.ings) {
