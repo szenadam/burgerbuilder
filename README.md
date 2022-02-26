@@ -1,6 +1,6 @@
 # Udemy -- React - The Complete Guide Course Project
 
-[![Build Status](https://travis-ci.com/szenadam/burgerbuilder.svg?branch=master)](https://travis-ci.com/szenadam/burgerbuilder)
+[![Node.js CI](https://github.com/szenadam/burgerbuilder/actions/workflows/node.js.yml/badge.svg?branch=master)](https://github.com/szenadam/burgerbuilder/actions/workflows/node.js.yml)
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
