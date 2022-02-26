@@ -6,8 +6,8 @@ This project was bootstrapped with [Create React App](https://github.com/faceboo
 
 ## Requirements
 
-- Nodejs v10
-- npm v6
+- Nodejs >= 14.18
+- npm >= 8.2
 
 ## Available Scripts
 
