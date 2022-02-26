@@ -7,10 +7,10 @@ import withErrorHandler from '../../hoc/withErrorHandler/withErrorHandler';
 import * as actions from '../../store/actions/index';
 import Spinner from '../../components/UI/Spinner/Spinner';
 
-const orders = props => {
+const Orders = props => {
   useEffect(() => {
     props.onFetchOrders(props.token, props.userId);
-  }, []);
+  }, [props]);
 
   let orders = <Spinner />;
   if (!props.loading) {
@@ -39,4 +39,4 @@ const mapDispatchToProps = dispatch => {
 export default connect(
   mapStateToProps,
   mapDispatchToProps
-)(withErrorHandler(orders, axios));
+)(withErrorHandler(Orders, axios));
