@@ -4,6 +4,11 @@
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+## Requirements
+
+- Nodejs v10
+- npm v6
+
 ## Available Scripts
 
 ### `npm start`
@@ -18,11 +23,7 @@ Run tests.
 
 Builds the app for production to the `build` folder.
 
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
-
-### TODO
+## TODO
 
 - Add prop types where necessary
 - Users should be able to delete orders
